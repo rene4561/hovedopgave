@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header class="topBar">
-      <topbar-navigation/>
+      <topbar-navigation v-bind:nav-links="navLinks"/>
       <topbar-user v-bind:username="activeuser.username"/>
     </header>
     <main>
@@ -25,24 +25,24 @@ export default {
       },
       navLinks: [
         {
-          text: 'Contact',
-          path: '/contact',
-          icon: 'ion-ios-megaphone'
+          text: 'Rediger sider',
+          path: '/edit',
+          icon: '/img/logo.82b9c7a5.png'
         },
         {
-          text: 'About',
-          path: '/about',
-          icon: 'ion-ios-business'
+          text: 'Tilpas udseende',
+          path: '/customize',
+          icon: '/img/logo.82b9c7a5.png'
         },
         {
-          text: 'Blog',
-          path: '/blog',
-          icon: 'ion-ios-bonfire'
+          text: 'Produkter',
+          path: '/Produkter',
+          icon: '/img/logo.82b9c7a5.png'
         },
         {
-          text: 'Portfolio',
-          path: '/portfolio',
-          icon: 'ion-ios-briefcase'
+          text: 'Test',
+          path: '/Test',
+          icon: '/img/logo.82b9c7a5.png'
         }
       ]
     }
@@ -51,7 +51,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import 'https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css';
 @import "./styles/_normalize.scss";
 
 body {

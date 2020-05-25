@@ -1,17 +1,20 @@
 <template>
     <nav id="nav">
-        <a href=""></a>
-        <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
+			<figure v-for="(link, index) in navLinks" :key="index">
+        <router-link :to="link.path">
+					<img :src="link.icon"/>
+					<figcaption>
+						{{link.text}}
+					</figcaption>
+				</router-link>
+			</figure>
     </nav>
 </template>
 
 <script>
 export default {
   name: 'TopbarNavigation',
-  props: {
-    msg: String
-  }
+  props: ['navLinks']
 }
 </script>
 
@@ -19,13 +22,20 @@ export default {
 <style scoped lang="scss">
 
 #nav {
-  display: flex;
-  justify-content: center;
-  padding: 2px;
-  
+  display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	width: 50%;
+	
+	figure {
+		margin: 0;
 
+		img {
+		width: 2em;
+		}
+	}
+	
   a {
-    font-weight: bold;
+		text-decoration: none;
     color: $black;
 
     &.router-link-exact-active {
@@ -33,5 +43,4 @@ export default {
     }
   }
 }
-
 </style>

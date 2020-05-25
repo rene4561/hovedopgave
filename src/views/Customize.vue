@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="customize">
     <img alt="Vue logo" src="../assets/logo.png">
     <customize-navigationmenu-items/>
   </div>
@@ -11,7 +11,7 @@ import CustomizeNavigationmenuItems from '@/components/test1.vue'
 
 
 export default {
-  name: 'Home',
+  name: 'Customize',
   components: {
     CustomizeNavigationmenuItems,
   }
