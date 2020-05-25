@@ -1,13 +1,13 @@
 <template>
     <nav id="nav">
-			<figure v-for="(link, index) in navLinks" :key="index">
-        <router-link :to="link.path">
+      <router-link :to="link.path" v-for="(link, index) in navLinks" :key="index">
+				<figure >
 					<img :src="link.icon"/>
 					<figcaption>
 						{{link.text}}
 					</figcaption>
-				</router-link>
-			</figure>
+				</figure>
+			</router-link>
     </nav>
 </template>
 
@@ -23,23 +23,35 @@ export default {
 
 #nav {
   display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	width: 50%;
+	grid-template-columns: auto auto auto auto auto ;
+	grid-column-gap: 1em;
 	
 	figure {
 		margin: 0;
+		padding: 5px;
+	}
 
 		img {
-		width: 2em;
+		width: 50px;
 		}
-	}
 	
   a {
 		text-decoration: none;
-    color: $black;
+		color: $black;
+		-webkit-transition: background 200ms ease-in-out;
+		-moz-transition: background 200ms ease-in-out;
+		-ms-transition: background 200ms ease-in-out;
+		-o-transition: background 200ms ease-in-out;
+		transition: background 200ms ease-in-out;
+		border-radius: 5%;
+
+		&:hover {
+			background-color: #c6c6c6;
+		}
 
     &.router-link-exact-active {
-      color: #42b983;
+			color: #42b983;
+			background-color: #c6c6c6;
     }
   }
 }

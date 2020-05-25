@@ -26,8 +26,8 @@ export default {
   data() {
     return {
       apps: [
-        { id: 1, name: 'Udseende', icon: '/img/logo.82b9c7a5.png'},
-        { id: 2, name: 'Rediger', icon: '/img/logo.82b9c7a5.png'},
+        { id: 1, name: 'Rediger sider', icon: '/img/edit-page.7e813759.svg'},
+        { id: 2, name: 'Tilpas udseende', icon: '/img/customize-page.96d23b86.png'},
         { id: 3, name: 'Produkter', icon: '/img/logo.82b9c7a5.png'},
         { id: 4, name: 'Grid test', icon: '/img/logo.82b9c7a5.png'},
         { id: 5, name: 'Grid test', icon: '/img/logo.82b9c7a5.png'},
@@ -43,14 +43,15 @@ export default {
   .home {padding: 35px 0;}
 
   .profilePicture {
-    border: $grey-border;
     border-radius: 100%;
+    background-color: $secondary;
+    width: 150px;
   }
 
   .apps {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
-    max-width: 700px;
+    max-width: 800px;
     margin: 10vh auto;
   }
 </style>

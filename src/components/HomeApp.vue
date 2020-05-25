@@ -18,11 +18,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   figure {
+    margin: auto;
+    margin-bottom: 2em;
+
     img {
-      width: 70px;
+      width: 80px;
       padding: .5em;
-      border: $grey-border;
-      border-radius: 10px;
     }
     figcaption {
       font-size: 1.3em;

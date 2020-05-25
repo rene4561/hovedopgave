@@ -25,14 +25,19 @@ export default {
       },
       navLinks: [
         {
+          text: 'Forside',
+          path: '/home',
+          icon: '/img/logo.82b9c7a5.png'
+        },
+        {
           text: 'Rediger sider',
           path: '/edit',
-          icon: '/img/logo.82b9c7a5.png'
+          icon: '/img/edit-page.7e813759.svg'
         },
         {
           text: 'Tilpas udseende',
           path: '/customize',
-          icon: '/img/logo.82b9c7a5.png'
+          icon: '/img/customize-page.96d23b86.png'
         },
         {
           text: 'Produkter',
