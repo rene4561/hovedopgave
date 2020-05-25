@@ -21,7 +21,7 @@ export default {
   data() {
     return {
       activeuser:{
-        username: 'Vuencint'
+        username: 'René'
       },
       navLinks: [
         {
@@ -32,22 +32,22 @@ export default {
         {
           text: 'Rediger sider',
           path: '/edit',
-          icon: '/img/edit-page.7e813759.svg'
+          icon: '../assets/edit-page.svg'
         },
         {
           text: 'Tilpas udseende',
           path: '/customize',
-          icon: '/img/customize-page.96d23b86.png'
+          icon: '../assets/customize-page.png'
         },
         {
           text: 'Produkter',
           path: '/Produkter',
-          icon: '/img/logo.82b9c7a5.png'
+          icon: '../assets/product-page.svg'
         },
         {
           text: 'Test',
           path: '/Test',
-          icon: '/img/logo.82b9c7a5.png'
+          icon: '../assets/logo.png'
         }
       ]
     }

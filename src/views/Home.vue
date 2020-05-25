@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img class="profilePicture" alt="profile picture" src="../assets/logo.png">
+    <img class="profilePicture" alt="profile picture" src="../assets/Mig.jpg">
     <h1>Velkommen {{username}}</h1>
     <nav class="apps">
       <HomeApp 
@@ -26,15 +26,15 @@ export default {
   data() {
     return {
       apps: [
-        { id: 1, name: 'Rediger sider', icon: '/img/edit-page.7e813759.svg'},
-        { id: 2, name: 'Tilpas udseende', icon: '/img/customize-page.96d23b86.png'},
-        { id: 3, name: 'Produkter', icon: '/img/logo.82b9c7a5.png'},
-        { id: 4, name: 'Grid test', icon: '/img/logo.82b9c7a5.png'},
-        { id: 5, name: 'Grid test', icon: '/img/logo.82b9c7a5.png'},
-        { id: 6, name: 'Grid test', icon: '/img/logo.82b9c7a5.png'},
-        { id: 7, name: 'Grid test', icon: '/img/logo.82b9c7a5.png'},
+        { id: 1, name: 'Rediger sider', icon: '../assets/edit-page.svg'},
+        { id: 2, name: 'Tilpas udseende', icon: '../assets/customize-page.png'},
+        { id: 3, name: 'Produkter', icon: '../assets/product-page.svg'},
+        { id: 4, name: 'Billedarkiv', icon: '../assets/logo.png'},
+        { id: 5, name: 'Sprog', icon: '../assets/logo.png'},
+        { id: 6, name: 'Betegnelser', icon: '../assets/logo.png'},
+        { id: 7, name: 'Grid test', icon: '../assets/logo.png'},
       ],
-        username: 'Vuencint'
+        username: 'René'
     }
   }
 }
