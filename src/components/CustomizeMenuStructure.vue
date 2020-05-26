@@ -28,15 +28,24 @@
           </draggable>
         </div>
       </section>
-      
     </article>
-    
-
+		<section>	
+			<h3>Menu forhåndvisning</h3>
+			<div class="previewWindow">
+				<div class="previewBody">
+					<div class="previewHead">
+						<menu-preview v-bind:menu-pages-active-list="menuPagesActiveList"/>
+					</div>
+				</div>
+			</div>
+		</section>
   </section>
 </template>
 
 <script>
 import draggable from "vuedraggable";
+import MenuPreview from "./CustomizeMenuStrukturePreview"
+
 const menuPagesInactiveArray = [
   "Test",
   "Datapolitik",
@@ -52,7 +61,8 @@ const menuPagesActiveArray = [
 export default {
   name: "CustomizeMenuStructure",
   components: {
-    draggable
+    draggable,
+    MenuPreview
   },
   data() {
     return {
@@ -143,7 +153,7 @@ export default {
   .tempContainer {
     display: flex;
     flex-wrap: wrap;
-    align-items: start;
+    align-items: flex-start;
     align-content: flex-start;
     min-height: 100%;
 
@@ -191,7 +201,32 @@ export default {
   }
 }
 
+.previewWindow {
+	background-color: #e5e5e5;
+	height: 300px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
 
+	.previewBody {
+		background-color: #fff;
+		width: 70%;
+		height: 70%;
+		box-shadow: $small-shadow-reverse;
+
+		.previewHead {
+			background-color: #006ba1;
+			color: #fff;
+			font-size: .8em;
+			padding: 0 1em;
+			height: 25%;
+			display: flex;
+			align-content: center;
+			align-items: center;
+		}
+
+	}
+}
 
 .flip-list- {
   transition: transform 0.5s;
