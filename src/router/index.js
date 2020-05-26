@@ -6,25 +6,26 @@ Vue.use(VueRouter)
 
   const routes = [
   {
-    path: '/',
+    path: '',
     name: 'Home',
-    component: Home
-  },
-  {
-    path: '/home',
-    name: 'home',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue')
+    component: Home,
   },
   {
     path: '/customize',
-    name: 'customize',
+    name: 'Customize',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "customize" */ '../views/Customize.vue')
+    component: () => import(/* webpackChunkName: "customize" */ '../views/Customize.vue'),
+    meta: { transitionName: 'slide' },
+  },
+  {
+    path: '*',
+    name: '404',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "404NotFound" */ '../views/404NotFound.vue'),
   }
 ]
 

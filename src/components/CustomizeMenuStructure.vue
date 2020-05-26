@@ -7,7 +7,7 @@
       </div>
     </div>
 
-    <div class="menuInactiveListContainer">
+    <div class="InactiveMenuList">
       <draggable class="list-group" tag="ul" v-model="menuPagesInactiveList" v-bind="dragOptions" :move="onMove" @start="isDragging=true" @end="isDragging=false">
         <transition-group type="transition" :name="'flip-list'">
           <li class="list-group-item" v-for="element in menuPagesInactiveList" :key="element.order">
@@ -44,7 +44,7 @@ const menuPagesActiveArray = [
   ]
 
 export default {
-  name: "CustomizeNavigationmenuItems",
+  name: "CustomizeMenuStructure",
   components: {
     draggable
   },
@@ -99,7 +99,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
+
 
 .flip-list-move {
   transition: transform 0.5s;
@@ -120,11 +122,10 @@ export default {
 
 .list-group-item {
   cursor: move;
-  
-}
 
-.list-group-item i {
-  cursor: pointer;
+  i {
+    cursor: pointer;
+  }
 }
 
 </style>

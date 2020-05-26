@@ -1,14 +1,14 @@
 <template>
-    <nav id="nav">
-      <router-link :to="link.path" v-for="(link, index) in navLinks" :key="index">
-				<figure >
-					<img :src="link.icon"/>
-					<figcaption>
-						{{link.text}}
-					</figcaption>
-				</figure>
-			</router-link>
-    </nav>
+  <nav id="nav">
+    <router-link :to="link.path" v-for="(link, index) in navLinks" :key="index">
+      <figure >
+        <img :src="link.icon"/>
+        <figcaption>
+          {{link.text}}
+        </figcaption>
+      </figure>
+    </router-link>
+  </nav>
 </template>
 
 <script>
@@ -50,7 +50,6 @@ export default {
 		}
 
     &.router-link-exact-active {
-			color: #42b983;
 			background-color: #c6c6c6;
     }
   }
