@@ -92,6 +92,7 @@ export default {
     padding: 0 1em;
     background: $gre-y-dient;
     box-shadow: $primary-shadow;
+    z-index: 10;
   }
 
   main {

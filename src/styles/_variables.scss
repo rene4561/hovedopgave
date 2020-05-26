@@ -13,12 +13,16 @@ $primary-shadow:
   0 4px 17px rgba(0, 0, 0, 0.084)
 ;
 
+$small-shadow :
+  0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0,0,0,.12);
+;
+
 
 $nav-height: 9vh;
 
-$grey-border: 1px solid grey;
+$grey-border: 1px solid $secondary;
 
 
-$neo-border: 50px;
-$neo-bg: #e3e5e8;
-$neo-shadow: 20px 20px 60px #c1c3c5, -20px -20px 60px #ffffff;
+$neo-border: 10px;
+$neo-bg: #ffffff;
+$neo-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
