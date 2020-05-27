@@ -1,7 +1,7 @@
 <template>
   <section class="menuStructureSetting">
 
-    <h2>Lav din menustruktur</h2>
+    <h2>Tilpas din menustruktur</h2>
     <p>Rediger i rækkefølgen på dine navigationslinks.</p>
     <article class="menuStructureWidget">
       <section class="activeMenuWrap">
@@ -49,13 +49,13 @@ import MenuPreview from "./CustomizeMenuStrukturePreview"
 const menuPagesInactiveArray = [
   "Test",
   "Datapolitik",
-  "Anmeldelser"
-];
-const menuPagesActiveArray = [
-  "Forside",
+  "Anmeldelser",
   "Ydelser",
   "Om os",
   "Kontakt os"
+];
+const menuPagesActiveArray = [
+  "Forside",
   ]
 
 export default {
@@ -196,7 +196,7 @@ export default {
       background-color: $tertiary;
       border: $grey-border;
       box-shadow: $small-shadow;
-      color: $dark-grey;
+      color: $black;
       }
   }
 }

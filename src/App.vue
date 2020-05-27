@@ -35,7 +35,7 @@ export default {
         {
           text: 'Forside',
           path: '/',
-          icon: '/img/logo.82b9c7a5.png'
+          icon: '../assets/logo.png'
         },
         {
           text: 'Rediger sider',
